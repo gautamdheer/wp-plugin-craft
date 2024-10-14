@@ -33,4 +33,54 @@ function sc_message_parameter($attributes){
 
 
 // Shortcode with DB Operation
-add_shortcode(" ","");
+add_shortcode("listposts","sc_handle_list_posts");
+
+function sc_list_posts(){
+
+    global $wpdb;
+    $table_name = $wpdb->prefix."posts";
+
+   // Get the post where post_type=posts and post_status=publish
+   $posts =  $wpdb->get_results("SELECT post_title from ".$table_name." where post_type='post' AND post_status='publish'");
+    
+   if(count($posts)> 0){
+    $output = "<ul style='list-style-type:none;'>";
+    foreach($posts as $post){
+        $output .= "<li>".$post->post_title."</li>";
+     }
+    $output.="</ul>";
+
+   }
+   return $output;
+
+
+}
+
+function sc_handle_list_posts($attributes){
+    
+    shortcode_atts(array(
+        "number"=>5,
+    ), $attributes, 'listposts');
+
+    $query = new WP_Query(array(
+        "posts_per_page"=>$attributes['number'],
+        "post_status"=>"publish"
+    ));
+
+    if($query->have_posts()){
+        
+        $outputHtml = "<ul>";
+        while( $query->have_posts() ){
+            $query->the_post();
+            $outputHtml .= "<li>".get_the_title()."</li>";
+        }
+        $outputHtml.="</ul>";
+        return $outputHtml;
+    }
+    
+    return "No Post Foound";
+}
+
+
+
+?>
