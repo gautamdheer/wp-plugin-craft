@@ -1,0 +1,11 @@
+id,name,email,age,phone,photo
+1,John Doe,johndoe@example.com,30,123-456-7890,https://example.com/photos/johndoe.jpg
+2,Jane Smith,janesmith@example.com,25,987-654-3210,https://example.com/photos/janesmith.jpg
+3,Michael Johnson,michaelj@example.com,40,555-123-4567,https://example.com/photos/michaelj.jpg
+4,Emily Davis,emilydavis@example.com,28,222-333-4444,https://example.com/photos/emilydavis.jpg
+5,David Brown,davidbrown@example.com,35,666-777-8888,https://example.com/photos/davidbrown.jpg
+6,Sarah Wilson,sarahwilson@example.com,32,999-888-7777,https://example.com/photos/sarahwilson.jpg
+7,Robert Lee,robertlee@example.com,45,111-222-3333,https://example.com/photos/robertlee.jpg
+8,Laura Martinez,lauram@example.com,27,444-555-6666,https://example.com/photos/lauram.jpg
+9,Christopher Taylor,christaylor@example.com,38,333-444-5555,https://example.com/photos/christaylor.jpg
+10,Amy Anderson,amyanderson@example.com,29,777-888-9999,https://example.com/photos/amyanderson.jpg

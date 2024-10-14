@@ -72,7 +72,7 @@ function sc_handle_list_posts($attributes){
         $outputHtml = "<ul>";
         while( $query->have_posts() ){
             $query->the_post();
-            $outputHtml .= "<li>".get_the_title()."</li>";
+            $outputHtml .= '<li><a target="_blank" href="'.get_the_permalink().'">"'.get_the_title().'"</a></li>';
         }
         $outputHtml.="</ul>";
         return $outputHtml;
