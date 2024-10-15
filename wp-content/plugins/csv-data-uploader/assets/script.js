@@ -13,11 +13,10 @@ jQuery(document).ready(function(){
             processData:false,
             contentType:false,
             success:function(response){
-                if(response){
-                setTimeout(() => {
-                    jQuery("#message").text(response.message);
-                }, 3000);
-                }
+                if(response.status){
+                     jQuery("#message").text(response.message).css("color","green");
+                 }
+                 jQuery("#frm-csv-upload")[0].reset();
             },
             error: function(error) {
                 console.error("AJAX Error:", error); // Improved error handling

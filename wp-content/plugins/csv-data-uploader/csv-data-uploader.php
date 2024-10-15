@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Csv Data Uploader
+ * Plugin Name: CSV Data Uploader
  * Description: This plugin upload CSV file data to the database table
  * Author: Gautam Dheer
  * Version: 1.0
