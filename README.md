@@ -14,3 +14,7 @@
 
 ### 5 My Custom Widget
 `This is a custom plug in where one can easily add information from the pattern widget area and information will popped up on the front end and the widget section`
+
+### 6 My Metabox Plugin
+`This plugin is about the add custom metabox title and description in the page and adding it on page source code`
+
