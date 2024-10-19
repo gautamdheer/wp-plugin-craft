@@ -1,0 +1,22 @@
+[19-Oct-2024 19:25:06 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'll) NOT NULL AUTO_INCREMENT,
+            `name` varchar(S0) NOT NULL,
+     ...' at line 2 for query 
+            CREATE TABLE `wp_employees`(
+            `id` int(ll) NOT NULL AUTO_INCREMENT,
+            `name` varchar(S0) NOT NULL,
+            `email` varchar(50) DEFAULT NULL,
+            `designation` varchar(50) DEFAULT NULL,
+            PRIMARY KEY (`id`)
+            ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci 
+              made by activate_plugin, do_action('activate_wp-crud-employee/wp-crud-employee.php'), WP_Hook->do_action, WP_Hook->apply_filters, MyEmployees->createEmployeeTable, dbDelta
+[19-Oct-2024 19:27:07 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'll) NOT NULL AUTO_INCREMENT,
+            `name` varchar(50) NOT NULL,
+     ...' at line 2 for query 
+            CREATE TABLE `wp_employees`(
+            `id` int(ll) NOT NULL AUTO_INCREMENT,
+            `name` varchar(50) NOT NULL,
+            `email` varchar(50) DEFAULT NULL,
+            `designation` varchar(50) DEFAULT NULL,
+            PRIMARY KEY (`id`)
+            ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci 
+              made by activate_plugin, do_action('activate_wp-crud-employee/wp-crud-employee.php'), WP_Hook->do_action, WP_Hook->apply_filters, MyEmployees->createEmployeeTable, dbDelta

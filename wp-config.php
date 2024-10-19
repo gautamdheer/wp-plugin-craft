@@ -41,8 +41,8 @@ define('WP_MEMORY_LIMIT', '256M'); // Adjust "256M" to your desired memory limit
 
 
 if ( !defined('WP_CLI') ) {
-    define( 'WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
-    define( 'WP_HOME',    $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
+    define('WP_SITEURL', 'http://localhost/wp-plugin-craft/');
+    define('WP_HOME', 'http://localhost/wp-plugin-craft/');
 }
 
 
@@ -90,7 +90,8 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', true );
-
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
 

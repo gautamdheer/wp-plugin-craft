@@ -16,5 +16,4 @@
  add_action("admin_menu","wpc_add_submenu");
 
  function wpc_add_submenu(){
-    add_submenu_page("n",);
- }
+  }
