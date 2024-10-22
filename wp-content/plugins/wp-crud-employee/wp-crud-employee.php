@@ -8,9 +8,9 @@
  */
 
 if(!defined('ABSPATH')){
-    exit;
+exit;
 }
- 
+
 define("WCE_DIR_PATH",plugin_dir_path(__FILE__));
 define("WCE_DIR_URL",plugin_dir_url(__FILE__));
 
@@ -18,9 +18,17 @@ include_once WCE_DIR_PATH. "MyEmployees.php";
 
 // create class object
 $employeeObject = new MyEmployees;
- 
-// create DB Table
-register_activation_hook(__FILE__,[$employeeObject,"createEmployeeTable"]);
+
+// create DB Table + Wordpress ppage
+register_activation_hook(__FILE__,[$employeeObject,"callPluginActivationFunctions"]);
+
+// deactive the table
+register_deactivation_hook(__FILE__,[$employeeObject,"dropTheTable"]);
 
 
- ?>
+// Render employee form layout
+add_shortcode("wp-employee-form",[$employeeObject,"createEmployeeForm"]);
+
+
+
+?>
