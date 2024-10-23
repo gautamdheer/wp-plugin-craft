@@ -58,6 +58,56 @@
            return $layout;
         }
 
-        
+        // add css / js file
+        public function addAssetsToPlugin(){
+            // Style
+            wp_enqueue_style("employee-crud-css",WCE_DIR_URL."assets/style.css");
+
+            //ValidateJs 
+            wp_enqueue_script("wce-validation",WCE_DIR_URL."assets/jquery.validate.min.js",array("jquery"));
+
+            // JS
+            wp_enqueue_script("employee-crud-js",WCE_DIR_URL."assets/script.js",array("jquery"),"3.0");
+            
+            wp_localize_script("employee-crud-js","wce_object", array(
+                "ajax_url" => admin_url("admin-ajax.php")
+                ));
+        }
+
+        // Process Ajax Request : Add Employee Form
+        public function handleAddEmployeeFormData() {    
+
+            $name = sanitize_text_field($_POST['name']);
+            $email = sanitize_text_field($_POST['email']);
+            $designation = sanitize_text_field($_POST['designation']);
+            
+            // File is empty
+
+            $this->wpdb->insert(
+                $this->table_name,[
+                    'name'=> $name,
+                    'email'=> $email,
+                    'designation'=> $designation
+                ]
+            );
+            $employee_id  = $this->wpdb->insert_id;
+
+            if($employee_id){
+                echo json_encode([
+                    "status"=>"1",
+                    "message"=> "Successfully, created the employee",
+                    "data" => $_POST
+                ]);
+            }
+            else{
+                echo json_encode([
+                    "status"=>"0",
+                    "message"=> "There is error while submiting the request",
+                    "data" => $_POST
+                ]);
+            }
+
+
+        }
     }
-    ?>
+    ?>  

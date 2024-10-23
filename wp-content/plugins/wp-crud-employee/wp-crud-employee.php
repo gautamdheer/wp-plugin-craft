@@ -29,6 +29,9 @@ register_deactivation_hook(__FILE__,[$employeeObject,"dropTheTable"]);
 // Render employee form layout
 add_shortcode("wp-employee-form",[$employeeObject,"createEmployeeForm"]);
 
+// add css and js assets
+add_action("wp_enqueue_scripts" ,[$employeeObject,"addAssetsToPlugin"]);
 
-
-?>
+// 
+add_action("wp_ajax_wce_add_employee",[$employeeObject,"handleAddEmployeeFormData"]);
+?>  
