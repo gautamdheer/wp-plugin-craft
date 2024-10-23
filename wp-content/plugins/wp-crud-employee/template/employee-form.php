@@ -6,7 +6,7 @@
 
     <form action="javascript:void(0)" id="frm_add_employee" enctype="multipart/form-data">
         <input type="hidden" name="action" value="wce_add_employee">
-        <p  id="message"></p>
+        <div id="message"></div>
         <p>
             <label for="employee_name"><i class="fas fa-user form-icon"></i>Name</label>
             <input type="text" required name="name" id="employee_name" placeholder="Enter Employee Name">

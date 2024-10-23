@@ -107,14 +107,14 @@
             $employee_id  = $this->wpdb->insert_id;
 
             if($employee_id){
-                echo json_encode([
+                echo wp_send_json([
                     "status"=>"1",
                     "message"=> "Successfully, created the employee",
                     "data" => $_POST
                 ]);
             }
             else{
-                echo json_encode([
+                echo wp_send_json([
                     "status"=>"0",
                     "message"=> "There is error while submiting the request",
                     "data" => $_POST

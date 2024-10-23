@@ -13,11 +13,19 @@ jQuery(document).ready(function(){
             url:wce_object.ajax_url,
             method: "POST",
             data: formData,
-            dataType:"json",
             processData:false,
             contentType:false,
-            success:function(response){
-                jQuery("#message").html(response).css("color", "green");
+            success: function(response) {
+                if(response.status) {
+                    jQuery("#message").html('<p style="color: green;">' + response.message + '</p>');
+                    jQuery("#frm_add_employee")[0].reset();
+                } else {
+                    jQuery("#message").html('<p style="color: red;">' + response.message + '</p>');
+                }
+               
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log('Error: ' + textStatus + ', ' + errorThrown);
             }
             
         });
