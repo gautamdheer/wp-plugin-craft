@@ -123,5 +123,35 @@
 
 
         }
+
+        // Load all employee data
+        public function loadAllEmployeeData() {
+            $query = "SELECT * FROM {$this->table_name} ORDER BY id DESC";
+            $results = $this->wpdb->get_results($query, ARRAY_A);
+            
+            echo wp_send_json([
+                "status"=>1,
+                "message"=>"Successfully, loaded the employee data",
+                "data"=>$results
+            ]);
+        }
+
+        // Delete Employee
+        public function deleteEmployee($employee_id){
+            $result = $this->wpdb->delete($this->table_name,array("id"=>$employee_id));
+            if($result){
+                echo wp_send_json([
+                    "status"=>1,
+                    "message"=>"Successfully, deleted the employee",
+                    "data"=>$employee_id
+                ]);
+            }
+            else{
+                echo wp_send_json([
+                    "status"=>0,
+                    "message"=>"There is error while deleting the employee",
+                ]);
+            }
+        }
     }
     ?>  

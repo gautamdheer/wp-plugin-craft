@@ -79,3 +79,19 @@
 #frm_add_employee .error{
     color:red;
 }
+button.edit-employee{
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer;
+    width: 100px;
+}
+button.delete-employee{
+    background-color: #dc3545; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer;
+    width: 100px;
+}

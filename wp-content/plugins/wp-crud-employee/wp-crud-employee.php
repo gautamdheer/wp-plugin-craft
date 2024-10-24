@@ -34,4 +34,13 @@ add_action("wp_enqueue_scripts" ,[$employeeObject,"addAssetsToPlugin"]);
 
 // 
 add_action("wp_ajax_wce_add_employee",[$employeeObject,"handleAddEmployeeFormData"]);
+
+// Load all employee data
+add_action("wp_ajax_wce_load_all_employee_data",[$employeeObject,"loadAllEmployeeData"]);
+add_action("wp_ajax_nopriv_wce_load_all_employee_data",[$employeeObject,"loadAllEmployeeData"]);
+
+// Delete Employee
+add_action("wp_ajax_wce_delete_employee",[$employeeObject,"deleteEmployee"]);
+add_action("wp_ajax_nopriv_wce_delete_employee",[$employeeObject,"deleteEmployee"]);
+
 ?>  

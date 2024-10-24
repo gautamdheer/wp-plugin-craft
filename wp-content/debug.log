@@ -1,1 +1,6 @@
 [23-Oct-2024 16:38:33 UTC] PHP Parse error:  syntax error, unexpected token "}" in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\wp-crud-employee\MyEmployees.php on line 89
+[24-Oct-2024 08:15:01 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in D:\xampp\htdocs\wp-plugin-craft\wp-includes\class-wpdb.php on line 1982
+[24-Oct-2024 08:15:14 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in D:\xampp\htdocs\wp-plugin-craft\wp-includes\class-wpdb.php on line 1982
+[24-Oct-2024 08:15:14 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it in D:\xampp\htdocs\wp-plugin-craft\wp-includes\class-wpdb.php on line 1982
+[24-Oct-2024 09:05:49 UTC] Automatic updates starting...
+[24-Oct-2024 09:05:50 UTC] Automatic updates complete.
