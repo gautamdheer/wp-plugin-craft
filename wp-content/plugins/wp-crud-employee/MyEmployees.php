@@ -24,6 +24,7 @@
                 `name` varchar(50) NOT NULL,
                 `email` varchar(50) DEFAULT NULL,
                 `designation` varchar(50) DEFAULT NULL,
+                `profile_image` varchar(50) DEFAULT NULL,
                 PRIMARY KEY (`id`)
             ) ".$collate."
         ";
@@ -101,7 +102,7 @@
                     'name'=> $name,
                     'email'=> $email,
                     'designation'=> $designation,
-                    'profile_url'=> $profile_url
+                    'profile_image'=> $profile_url
                 ]
             );
             $employee_id  = $this->wpdb->insert_id;
@@ -153,5 +154,83 @@
                 ]);
             }
         }
+
+        // Get Employee Data
+        public function getEmployeeData() {
+            $employee_id = isset($_GET['employee_id']) ? intval($_GET['employee_id']) : 0;
+            if ($employee_id > 0) {
+                $query = $this->wpdb->prepare("SELECT * FROM {$this->table_name} WHERE id = %d", $employee_id);
+                $result = $this->wpdb->get_row($query, ARRAY_A);
+
+                if ($result) {
+                    echo wp_send_json([
+                        "status" => 1,
+                        "message" => "Successfully, loaded the employee data",
+                        "data" => $result
+                    ]);
+                } else {
+                    echo wp_send_json([
+                        "status" => 0,
+                        "message" => "Employee not found",
+                    ]);
+                }
+            } else {
+                echo wp_send_json([
+                    "status" => 0,
+                    "message" => "Invalid employee ID",
+                ]);
+            }
+        }
+
+        // Update Employee
+        public function updateEmployee(){
+            $employee_id = isset($_POST["employee_id"]) ? intval($_POST["employee_id"]) : 0;
+            $name = sanitize_text_field($_POST['name']);
+            $email = sanitize_text_field($_POST['email']);
+            $designation = sanitize_text_field($_POST['designation']);  
+
+            $profile_url = "";
+
+            if(isset($_FILES['profile_image']['name'])){
+                $fileUploaded = wp_handle_upload($_FILES['profile_image'], array("test_form"=>false));
+                $profile_url = $fileUploaded['url'];
+            }
+
+            $update_data = array(
+                "name" => $name,
+                "email" => $email,
+                "designation" => $designation
+            );
+            
+            if (!empty($profile_url)) {
+                $update_data["profile_image"] = $profile_url;
+            }
+
+            $updated = $this->wpdb->update(
+                $this->table_name,
+                $update_data,
+                array("id" => $employee_id)
+            );
+
+            if ($updated !== false) {
+                echo wp_send_json([
+                    "status" => 1,
+                    "message" => "Successfully, updated the employee",
+                    "data" => $_POST
+                ]);
+            } else {
+                echo wp_send_json([
+                    "status" => 0,
+                    "message" => "Failed to update the employee",
+                ]);
+            }
+
+            echo wp_send_json([
+                "status"=>1,
+                "message"=>"Successfully, updated the employee",
+                "data"=>$_POST
+            ]); 
+
+        }   
     }
     ?>  

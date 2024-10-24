@@ -43,4 +43,11 @@ add_action("wp_ajax_nopriv_wce_load_all_employee_data",[$employeeObject,"loadAll
 add_action("wp_ajax_wce_delete_employee",[$employeeObject,"deleteEmployee"]);
 add_action("wp_ajax_nopriv_wce_delete_employee",[$employeeObject,"deleteEmployee"]);
 
-?>  
+// Get Employee Data
+add_action("wp_ajax_wce_get_employee_data",[$employeeObject,"getEmployeeData"]);
+add_action("wp_ajax_nopriv_wce_get_employee_data",[$employeeObject,"getEmployeeData"]);
+
+// Update Employee
+add_action("wp_ajax_wce_edit_employee",[$employeeObject,"updateEmployee"]);
+add_action("wp_ajax_nopriv_wce_edit_employee",[$employeeObject,"updateEmployee"]);
+?>      

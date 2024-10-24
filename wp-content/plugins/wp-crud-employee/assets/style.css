@@ -1,5 +1,9 @@
-
-#frm_add_employee form {
+.employee-form{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.employee-form form {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -7,11 +11,11 @@
     max-width: 600px;
     margin: auto;
 }
-#frm_add_employee label {
+.employee-form label {
     font-weight: bold;
     color: #34495e;
 }
-#frm_add_employee input, select {
+.employee-form input, select {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -19,7 +23,7 @@
     border: 1px solid #ccc;
     font-size: 16px;
 }
-#frm_add_employee button {
+.employee-form button {
     background-color: #3498db;
     color: white;
     padding: 10px 20px;
@@ -28,13 +32,13 @@
     cursor: pointer;
     font-size: 16px;
 }
-#frm_add_employee button:hover {
+.employee-form button:hover {
     background-color: #2980b9;
 }
-#frm_add_employee .form-icon {
+.employee-form .form-icon {
     margin-right: 10px;
 }
-#frm_add_employee table {
+.employee-form table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
@@ -43,22 +47,22 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-#frm_add_employee th, td {
+.employee-form th, td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-#frm_add_employee th {
+.employee-form th {
     background-color: #34495e;
     color: white;
 }
-#frm_add_employee td {
+.employee-form td {
     color: #333;
 }
-#frm_add_employee tr:hover {
+.employee-form tr:hover {
     background-color: #f1f1f1;
 }
-#frm_add_employee .action-buttons button {
+.employee-form .action-buttons button {
     background-color: #e74c3c;
     color: white;
     border: none;
@@ -67,16 +71,16 @@
     cursor: pointer;
     margin-right: 10px;
 }
-#frm_add_employee .action-buttons button:hover {
+.employee-form .action-buttons button:hover {
     background-color: #c0392b;
 }
-#frm_add_employee .action-buttons .edit-btn {
+.employee-form .action-buttons .edit-btn {
     background-color: #2ecc71;
 }
-#frm_add_employee .action-buttons .edit-btn:hover {
+.employee-form .action-buttons .edit-btn:hover {
     background-color: #27ae60;
 }
-#frm_add_employee .error{
+.employee-form .error{
     color:red;
 }
 button.edit-employee{
@@ -94,4 +98,8 @@ button.delete-employee{
     padding: 5px 10px; 
     cursor: pointer;
     width: 100px;
+}
+
+.hide_element{
+    display: none;
 }
