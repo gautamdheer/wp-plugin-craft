@@ -59,7 +59,8 @@ jQuery(document).ready(function () {
   });
 
   // Edit Employee
-  jQuery("#employee-table").on("click", ".edit-employee", function () {
+  jQuery("#employee-table").on("click", ".edit-employee", function (e) {
+    e.preventDefault();
     var employeeId = jQuery(this).data("id");
     jQuery("#frm_edit_employee").removeClass("hide_element");
     jQuery("#close_employee_form").removeClass("hide_element");
@@ -158,20 +159,32 @@ function deleteEmployee(employeeId) {
 }
 
 function updateEmployee(employeeId) {
-    console.log(employeeId);
 
+  jQuery("#frm_edit_employee").on("submit", function (e) {
+    e.preventDefault();
+    
     jQuery.ajax({
         url: wce_object.ajax_url,
         method: "POST",
         data: {
           action: "wce_edit_employee",
           employee_id: employeeId,
+          name: jQuery("#employee_name").val(),
+          email: jQuery("#employee_email").val(),
+          designation: jQuery("#employee_designation").val(), 
+          profile_image: jQuery("#employee_profile_image").val(),
         },
         success: function (response) {
-          console.log(response);
+           if(response.status){
+            alert(response.message);
+            loadEmployeeData();
+          }else{
+            alert(response.message);
+          }
         },
         error: function (jqXHR, textStatus, errorThrown) {
           console.log("Error: " + textStatus + ", " + errorThrown);
         },
       }); 
+    });
 }

@@ -50,4 +50,6 @@ add_action("wp_ajax_nopriv_wce_get_employee_data",[$employeeObject,"getEmployeeD
 // Update Employee
 add_action("wp_ajax_wce_edit_employee",[$employeeObject,"updateEmployee"]);
 add_action("wp_ajax_nopriv_wce_edit_employee",[$employeeObject,"updateEmployee"]);
+
+
 ?>      
