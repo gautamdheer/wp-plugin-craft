@@ -77,7 +77,7 @@ jQuery(document).ready(function () {
         jQuery("#employee_name").val(response.data.name);
         jQuery("#employee_email").val(response.data.email);
         jQuery("#employee_designation").val(response.data.designation);
-        jQuery("#employee_profile_image").val(response.data.profile_image);
+        jQuery("#employee_profile_image_preview").attr("src",response.data.profile_image);
 
         console.log("Data received:", response);
     },

@@ -64,6 +64,7 @@
         <p>
             <label for="employee_profile_image"><i class="fas fa-image form-icon"></i>Profile Image</label>
             <input type="file" name="employee_profile_image" id="employee_profile_image">
+            <img src="" alt="" id="employee_profile_image_preview" style="width: 100px;height: 100px;border-radius: 50%;border: 1px solid #ccc;">
         </p>
         <p>
             <button type="submit" id="btn_edit_data"><i class="fas fa-save"></i> Update Employee </button>
