@@ -109,3 +109,9 @@ Stack trace:
 [28-Oct-2024 11:52:22 UTC] Automatic updates complete.
 [28-Oct-2024 11:55:22 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [28-Oct-2024 16:17:29 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[29-Oct-2024 07:54:46 UTC] PHP Deprecated:  parse_str(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wp-plugin-craft\wp-content\plugins\woocommerce\src\Admin\WCAdminHelper.php on line 157
+[29-Oct-2024 07:54:51 UTC] Automatic updates starting...
+[29-Oct-2024 07:54:54 UTC] Automatic updates complete.
+[29-Oct-2024 09:06:38 UTC] Automatic updates starting...
+[29-Oct-2024 09:06:38 UTC] Automatic updates complete.
+[29-Oct-2024 10:24:08 UTC] PHP Deprecated:  parse_str(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wp-plugin-craft\wp-content\plugins\woocommerce\src\Admin\WCAdminHelper.php on line 157
