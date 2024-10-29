@@ -6,23 +6,34 @@
  * Version: 1.0.0
  * Author: Gautam Dheer
  */
+if(!defined("WPINC")) {
+    die;
+}
 
- if(!defined("WPINC")){
-    exit;
- }
- 
- // add plugin to menu
- add_action("admin_menu","wcp_add_plugin_menu");
+function wcp_show_woocommerce_error() {
+    $class = 'notice notice-error';
+    $message = __('Wocom Product requires WooCommerce to be installed and active.', 'wcp');
+    printf('<div class="%1$s"><p>%2$s</p></div>', esc_attr($class), esc_html($message));
+}
 
- function wcp_add_plugin_menu(){
-    add_menu_page("Woocommerce Product Creator","Woocommerce Product Creator","manage_options","wcp-product-creator","wcp_add_woocommerce_product_layout","dashicons-cloud-upload",8);
- }
+if(!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+    add_action('admin_notices', 'wcp_show_woocommerce_error');
+}
 
- function wcp_add_woocommerce_product_layout(){
-    echo "<h2>Woocommerce Product Creator</h2>";
-   // include_once(WCP_PLUGIN_DIR."templates/wcp-product-layout.php");
- }
+function wocom_product_init() {
+    add_menu_page('Wocom Custom Product', 'Wocom Custom Product', 'manage_options', 'wocom-custom-product', 'wocom_product_page');
+}
+
+function wocom_product_page() {
+    include_once plugin_dir_path(__FILE__) .'templates/wcp-product-layout.php';
+}   
+
+add_action('admin_menu', 'wocom_product_init');
 
 
- 
+// Enqueue styles
+add_action("admin_enqueue_scripts", "wcp_enqueue_scripts");
 
+function wcp_enqueue_scripts() {
+    wp_enqueue_style("wcp-css", plugins_url("assets/style.css", __FILE__), array(), "1.0.0", "all");
+}
