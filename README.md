@@ -32,3 +32,8 @@ This plugin adds custom metaboxes to the WordPress page editor, enabling site ad
 
 *Description:*
 This plugin provides complete CRUD (Create, Read, Update, Delete) functionality for managing employee data within WordPress. It allows administrators to add, view, modify, and delete employee records directly from the WordPress admin interface. The plugin is ideal for handling small-scale data management tasks, such as employee directories or other data-driven applications.
+
+### 8. **WordPress Custom Product Plugin**
+
+*Description:*
+This plugin allows administrators to add, view, modify, and delete employee records directly from the WordPress admin interface. The plugin is ideal for handling small-scale data management tasks, such as employee directories or other data-driven applications.

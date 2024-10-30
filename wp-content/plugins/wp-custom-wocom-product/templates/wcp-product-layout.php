@@ -36,8 +36,10 @@
     
     <div class="form-group">
       <label for="product_image">Product Image</label>
-      <input type="file" id="product_image" name="wcp_product_image" accept="image/*">
-    </div>
+      <button class="wcp_upload_image_button btn-upload" id="wcp_upload_image_button">Upload Image</button>
+      <input type="hidden" name="product_media_id" id="product_media_id">
+       <img id="wcp_product_image" src="" alt="Product Image" style="width: 100px; height: 100px;">
+     </div>
       
     <button type="submit" class="btn-submit" name="wcp_add_product" id="wcp_add_product">Add Product</button>
     

@@ -115,3 +115,9 @@ Stack trace:
 [29-Oct-2024 09:06:38 UTC] Automatic updates starting...
 [29-Oct-2024 09:06:38 UTC] Automatic updates complete.
 [29-Oct-2024 10:24:08 UTC] PHP Deprecated:  parse_str(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wp-plugin-craft\wp-content\plugins\woocommerce\src\Admin\WCAdminHelper.php on line 157
+[30-Oct-2024 06:51:08 UTC] PHP Warning:  Undefined array key "wcp_product_image" in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\wp-custom-wocom-product\wp-custom-wocom-product.php on line 66
+[30-Oct-2024 07:09:53 UTC] PHP Deprecated:  parse_str(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\woocommerce\src\Admin\WCAdminHelper.php on line 157
+[30-Oct-2024 07:12:16 UTC] PHP Parse error:  syntax error, unexpected token ")", expecting "{" in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\wp-custom-wocom-product\wp-custom-wocom-product.php on line 69
+[30-Oct-2024 07:12:47 UTC] PHP Parse error:  Unclosed '{' on line 48 in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\wp-custom-wocom-product\wp-custom-wocom-product.php on line 75
+[30-Oct-2024 07:14:46 UTC] PHP Deprecated:  parse_str(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\woocommerce\src\Admin\WCAdminHelper.php on line 157
+[30-Oct-2024 07:16:20 UTC] PHP Deprecated:  parse_str(): Passing null to parameter #1 ($string) of type string is deprecated in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\woocommerce\src\Admin\WCAdminHelper.php on line 157

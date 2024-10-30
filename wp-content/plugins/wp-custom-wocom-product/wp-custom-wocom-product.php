@@ -34,7 +34,12 @@ function wocom_product_page() {
 // Enqueue styles
 add_action("admin_enqueue_scripts", "wcp_enqueue_scripts");
 function wcp_enqueue_scripts() {
+
+    wp_enqueue_media();
+
     wp_enqueue_style("wcp-css", plugins_url("assets/style.css", __FILE__), array(), "1.0.0", "all");
+
+    wp_enqueue_script("wcp-js", plugins_url("assets/script.js", __FILE__), array("jquery"), "1.0.0", true);
 }
 
 // Admin init
@@ -58,11 +63,19 @@ function wcp_handle_form_submission() {
         $product->set_short_description($_POST['wcp_short_description']);
         $product->set_sku($_POST['wcp_sku']);
         $product->set_status('publish');
-        $product->save();
-
-        echo "<div class='notice notice-success'>
+        $product->set_image_id($_POST['product_media_id']);
+        $product_id = $product->save();
+        
+        if($product_id > 0) {
+            add_action('admin_notices', function(){
+                echo "<div class='notice notice-success'>
                 <p>Product Added Successfully</p>
               </div>";
+            });
+        }
+
+
+
       } 
         
     }
