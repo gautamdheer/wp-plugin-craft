@@ -1,8 +1,2 @@
-[31-Oct-2024 08:53:13 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci' at line 6 for query CREATE TABLE IF NOT EXISTS wp_students (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        email VARCHAR(255) NOT NULL,
-        phone INT NOT NULL,
-    )DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_wp-crud-apis/wp-crud-apis.php'), WP_Hook->do_action, WP_Hook->apply_filters, wp_crud_apis_activate
-[01-Nov-2024 10:12:33 UTC] Automatic updates starting...
-[01-Nov-2024 10:12:35 UTC] Automatic updates complete.
+[01-Nov-2024 11:21:14 UTC] PHP Warning:  Undefined variable $students in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 11
+[01-Nov-2024 11:21:20 UTC] PHP Warning:  Undefined variable $students in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 11
