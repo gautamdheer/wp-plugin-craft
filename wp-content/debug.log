@@ -1,2 +1,74 @@
 [01-Nov-2024 11:21:14 UTC] PHP Warning:  Undefined variable $students in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 11
 [01-Nov-2024 11:21:20 UTC] PHP Warning:  Undefined variable $students in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 11
+[02-Nov-2024 06:11:33 UTC] Automatic updates starting...
+[02-Nov-2024 06:11:36 UTC] Automatic updates complete.
+[02-Nov-2024 10:09:41 UTC] Automatic updates starting...
+[02-Nov-2024 10:09:44 UTC] Automatic updates complete.
+[02-Nov-2024 10:13:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wpdb::update(), 2 passed in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 115 and at least 3 expected in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php:2673
+Stack trace:
+#0 C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php(115): wpdb->update('wp_students', Array)
+#1 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1230): wcp_handle_put_student(Object(WP_REST_Request))
+#2 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/students/v1/st...', Array, NULL)
+#3 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/students/v1/st...')
+#5 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#6 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\laragon\www\wp-plugin-craft\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#8 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(813): WP->parse_request('')
+#10 C:\laragon\www\wp-plugin-craft\wp-includes\functions.php(1336): WP->main('')
+#11 C:\laragon\www\wp-plugin-craft\wp-blog-header.php(16): wp()
+#12 C:\laragon\www\wp-plugin-craft\index.php(17): require('C:\\laragon\\www\\...')
+#13 {main}
+  thrown in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php on line 2673
+[02-Nov-2024 10:13:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wpdb::update(), 2 passed in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 115 and at least 3 expected in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php:2673
+Stack trace:
+#0 C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php(115): wpdb->update('wp_students', Array)
+#1 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1230): wcp_handle_put_student(Object(WP_REST_Request))
+#2 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/students/v1/st...', Array, NULL)
+#3 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/students/v1/st...')
+#5 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#6 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\laragon\www\wp-plugin-craft\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#8 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(813): WP->parse_request('')
+#10 C:\laragon\www\wp-plugin-craft\wp-includes\functions.php(1336): WP->main('')
+#11 C:\laragon\www\wp-plugin-craft\wp-blog-header.php(16): wp()
+#12 C:\laragon\www\wp-plugin-craft\index.php(17): require('C:\\laragon\\www\\...')
+#13 {main}
+  thrown in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php on line 2673
+[02-Nov-2024 10:16:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wpdb::update(), 2 passed in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 115 and at least 3 expected in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php:2673
+Stack trace:
+#0 C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php(115): wpdb->update('wp_students', Array)
+#1 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1230): wcp_handle_put_student(Object(WP_REST_Request))
+#2 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/students/v1/st...', Array, NULL)
+#3 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/students/v1/st...')
+#5 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#6 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\laragon\www\wp-plugin-craft\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#8 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(813): WP->parse_request('')
+#10 C:\laragon\www\wp-plugin-craft\wp-includes\functions.php(1336): WP->main('')
+#11 C:\laragon\www\wp-plugin-craft\wp-blog-header.php(16): wp()
+#12 C:\laragon\www\wp-plugin-craft\index.php(17): require('C:\\laragon\\www\\...')
+#13 {main}
+  thrown in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php on line 2673
+[02-Nov-2024 10:17:03 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wpdb::update(), 2 passed in C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php on line 115 and at least 3 expected in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php:2673
+Stack trace:
+#0 C:\laragon\www\wp-plugin-craft\wp-content\plugins\wp-crud-apis\includes\api-routes.php(115): wpdb->update('wp_students', Array)
+#1 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1230): wcp_handle_put_student(Object(WP_REST_Request))
+#2 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/students/v1/st...', Array, NULL)
+#3 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\laragon\www\wp-plugin-craft\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/students/v1/st...')
+#5 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#6 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\laragon\www\wp-plugin-craft\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#8 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 C:\laragon\www\wp-plugin-craft\wp-includes\class-wp.php(813): WP->parse_request('')
+#10 C:\laragon\www\wp-plugin-craft\wp-includes\functions.php(1336): WP->main('')
+#11 C:\laragon\www\wp-plugin-craft\wp-blog-header.php(16): wp()
+#12 C:\laragon\www\wp-plugin-craft\index.php(17): require('C:\\laragon\\www\\...')
+#13 {main}
+  thrown in C:\laragon\www\wp-plugin-craft\wp-includes\class-wpdb.php on line 2673
