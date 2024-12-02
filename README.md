@@ -37,3 +37,16 @@ This plugin provides complete CRUD (Create, Read, Update, Delete) functionality 
 
 *Description:*
 This plugin allows administrators to add, view, modify, and delete employee records directly from the WordPress admin interface. The plugin is ideal for handling small-scale data management tasks, such as employee directories or other data-driven applications.
+
+
+### 9. ** Custom Analytics Dashboard Plugin**
+*Description:*
+A plugin that integrates with Google Analytics or custom tracking APIs to display user-friendly analytics dashboards directly in the WordPress admin panel. It allows filtering by date, post type, and author, providing actionable insights for content creators.
+
+#### Key Features:
+
+- OAuth-based Google Analytics API integration.
+- Dashboard widgets for traffic sources, popular pages, and user demographics.
+- Custom chart rendering using Chart.js or D3.js.
+- Option to download reports as CSV or PDF.
+- Representation in Interview:
