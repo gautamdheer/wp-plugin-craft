@@ -22,7 +22,7 @@ class My_Custom_Widget extends WP_Widget{
             <input type="text" name="<?php echo $this->get_field_name('mcw_title') ?>"
                 id="<?php echo $this->get_field_id('mcw_title') ?>" class="widefat" value="<?php echo $mcw_title; ?>">
         </p>
-        <p>
+        <p> 
             <label for="<?php echo $this->get_field_id('mcw_display_type') ?>">Display type</label>
             <select name="<?php echo $this->get_field_name('mcw_display_type') ?>"
                 id="<?php echo $this->get_field_id('mcw_display_type') ?>" class="mcw_dd_option widefat">

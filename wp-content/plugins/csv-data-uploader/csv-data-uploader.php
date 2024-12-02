@@ -14,6 +14,7 @@ define("CDU_TABLE_NAME","students_data");
 
 add_shortcode('csv-data-uploader', 'cdu_handle_uploader_form');
 
+//form template
 function cdu_handle_uploader_form(){
     // start buffer
     ob_start();
@@ -31,7 +32,6 @@ function cdu_handle_uploader_form(){
 
 
 // DB Table on plugin activation
-
 register_activation_hook( __FILE__, "cdu_create_table");
 
 function cdu_create_table(){
@@ -54,7 +54,6 @@ function cdu_create_table(){
     ";
     require_once(ABSPATH."/wp-admin/includes/upgrade.php");
     dbDelta($sql);
-
 
 }
 
