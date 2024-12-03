@@ -1,2 +1,3 @@
 /wp-content/debug.log
 /vendor
+/wp-content/plugins/custom-analytics-dashboard/client_secrets.json
