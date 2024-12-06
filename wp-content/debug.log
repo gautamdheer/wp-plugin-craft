@@ -111,3 +111,132 @@ Stack trace:
 [02-Dec-2024 09:16:57 UTC]   Automatic theme updates starting...
 [02-Dec-2024 09:16:57 UTC]   Automatic theme updates complete.
 [02-Dec-2024 09:16:57 UTC] Automatic updates complete.
+[06-Dec-2024 06:09:40 UTC] Automatic updates starting...
+[06-Dec-2024 06:09:44 UTC]   Automatic plugin updates starting...
+[06-Dec-2024 06:09:44 UTC]   Automatic plugin updates complete.
+[06-Dec-2024 06:09:47 UTC]   Automatic theme updates starting...
+[06-Dec-2024 06:09:47 UTC]   Automatic theme updates complete.
+[06-Dec-2024 06:09:47 UTC] Automatic updates complete.
+[06-Dec-2024 06:28:50 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:28:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:49:30 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:49:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:50:31 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:50:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:52:32 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:52:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:54:33 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:54:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:56:34 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:56:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:58:35 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 06:58:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:33:11 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:33:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin-ajax.php(22): require_once('D:\\xampp\\htdocs...')
+#4 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:33:34 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:33:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin.php(34): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\wp-plugin-craft\wp-admin\index.php(10): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:33:55 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:33:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:14
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin.php(34): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\wp-plugin-craft\wp-admin\index.php(10): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 14
+[06-Dec-2024 07:36:49 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 10
+[06-Dec-2024 07:36:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:10
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin.php(34): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\wp-plugin-craft\wp-admin\index.php(10): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 10
+[06-Dec-2024 07:36:53 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 10
+[06-Dec-2024 07:36:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:10
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin.php(34): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\wp-plugin-craft\wp-admin\index.php(10): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 10
+[06-Dec-2024 07:38:23 UTC] PHP Warning:  require_once(D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 10
+[06-Dec-2024 07:38:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard/vendor/autoload.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php:10
+Stack trace:
+#0 D:\xampp\htdocs\wp-plugin-craft\wp-settings.php(522): include_once()
+#1 D:\xampp\htdocs\wp-plugin-craft\wp-config.php(107): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\wp-plugin-craft\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp-plugin-craft\wp-admin\admin.php(34): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\wp-plugin-craft\wp-admin\index.php(10): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+  thrown in D:\xampp\htdocs\wp-plugin-craft\wp-content\plugins\custom-analytics-dashboard\custom-analytics-dashboard.php on line 10
+[06-Dec-2024 07:55:29 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in D:\xampp\htdocs\wp-plugin-craft\wp-includes\class-avif-info.php on line 21
