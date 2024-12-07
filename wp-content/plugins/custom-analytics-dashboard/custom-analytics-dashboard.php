@@ -7,7 +7,7 @@ Version: 1.0
 Plugin URI: https://example.com/custom-analytics-dashboard
 Author URI: https://gautamdheer.github.io/ 
 */
-require_once(__DIR__ . '/vendor/autoload.php');
+require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 
 if(!defined('ABSPATH')) {
     exit;
@@ -50,20 +50,41 @@ function cad_page() {
 
 
 function cad_get_google_analytics_data() {
-    // logic to fetch data from Google Analytics API
+    // Check if Google Client class exists
+    if (!class_exists('Google_Client')) {
+        error_log('Google Client library not found. Please run composer install');
+        return array();
+    }
+
     $client  = new Google_Client();
-    $client->setAuthConfig(__DIR__ . '/client_secrets.json');
+    $client->setAuthConfig(plugin_dir_path(__FILE__) . 'client_secrets.json');
     $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
     $analytics = new Google_Service_Analytics($client);
 
-    $profileId = 'YOUR_PROFILE_ID'; // Replace with your Google Analytics profile ID
-    $results = $analytics->data_ga->get(
-        'ga:' . $profileId,
-        '30daysAgo',
-        'today',
-        'ga:sessions,ga:users'
-    );
-    return $results->getRows();
+    try {
+        $profileId = '0bc5936a5fc1ea21857fc5bfa2cc006a2ae98c5e'; // Replace with your Google Analytics Profile ID
+        $results = $analytics->data_ga->get(
+            'ga:' . $profileId,
+            '30daysAgo',
+            'today',
+            'ga:sessions,ga:users'
+        );
+
+        return $results->getRows();
+    } catch (Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+}
+
+// Pass Data to JavaScript
+add_action('admin_footer', 'cad_pass_data_to_js');
+function cad_pass_data_to_js() {
+    $analytics_data = cad_get_google_analytics_data();
+    ?>
+    <script>
+        const analyticsData = <?php echo json_encode($analytics_data); ?>;
+    </script>
+    <?php
 }
 
 function cad_render_dashboard(){
@@ -100,4 +121,21 @@ function cad_render_dashboard(){
     </div>
     <?php
 }
+
+function cad_render_filters() {
+    ?>
+    <form method="POST" id="analytics-filters">
+        <input type="date" name="start_date" required>
+        <input type="date" name="end_date" required>
+        <select name="post_type">
+            <option value="all">All Post Types</option>
+            <option value="post">Posts</option>
+            <option value="page">Pages</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+    <?php
+}
+
+ 
 ?>
